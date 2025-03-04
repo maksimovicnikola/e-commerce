@@ -25,10 +25,24 @@ Ensure you have the following installed:
 - [Docker](https://www.docker.com/)
 
 ### Steps to Run Locally
+
+#### Using Docker Compose
 1. **Clone the repository**:
    ```sh
-   git clone <repository-url>
-   cd <project-folder>
+   git clone https://github.com/maksimovicnikola/e-commerce
+   cd e-commerce
+   ```
+2. **Run the application**:
+   ```sh
+   docker-compose up --build
+   ```
+   The app will be available at `http://localhost:4200/`
+
+#### Without Docker
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/maksimovicnikola/e-commerce
+   cd e-commerce
    ```
 2. **Install dependencies**:
    ```sh
@@ -39,17 +53,6 @@ Ensure you have the following installed:
    ng serve
    ```
    The app will be available at `http://localhost:4200/`
-
-### Docker Deployment
-1. **Build the Docker image**:
-   ```sh
-   docker build -t angular-app .
-   ```
-2. **Run the container**:
-   ```sh
-   docker run -p 8080:80 angular-app
-   ```
-   The app will be accessible at `http://localhost:8080/`
 
 ## Contributing
 1. Fork the repository
